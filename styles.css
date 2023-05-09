@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.vcard {
+    background-color: #002453;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* added */
+    max-width: 400px; /* added */
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: #222;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #222;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .vcard {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+}
